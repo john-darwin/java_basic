@@ -10,6 +10,17 @@ class 子类 extends 父类 {
         this.breed = breed;
     }
 
+    /**
+     * 该方法对父类的final属性进行一个访问
+     *
+     * @return
+     */
+    public int makeMoney(){
+        int famileyMoney_byson = super.famileyMoney + 1;
+        System.out.println("Son make money: " + famileyMoney_byson);
+        return famileyMoney_byson;
+    }
+
     @Override
     public void makeSound() {
         super.makeSound(); // 在子类中调用父类被覆盖的方法
@@ -27,6 +38,7 @@ class 子类 extends 父类 {
     public static void main(String[] args) {
     	 子类 dog = new 子类("Buddy", "Golden Retriever");
          dog.printInfo();
+         dog.makeMoney();
     }
 }
 

@@ -15,7 +15,6 @@ public class 字符串 {
 	
 	public static void main(String[] args) {
 		StringBuffer();
-
 		StringBuild();//使用StringBuilder构建字符串
 	}
 
